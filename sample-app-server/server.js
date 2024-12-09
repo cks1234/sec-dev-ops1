@@ -48,13 +48,6 @@ var corsOptions = {
 app.use(cors(corsOptions));
 app.disable("x-powered-by");
 
-app.use(function(req,res,next){
-    res.setHeader(
-        'Content-Security-Policy',
-        "default-src 'self'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; frame-ancestors 'self'; upgrade-insecure-requests; X-Content-Type-Options 'nosniff';"
-      );
-      next();  
-})
 
 
 app.use (express.json());   // Mounts the specified middleware function at the
