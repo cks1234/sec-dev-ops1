@@ -6,7 +6,7 @@ const DEVPORT = process.env.DEVPORT || 4200;
 const SERVER = process.env.SERVER || "https://localhost";
 const BUILD = process.env.BUILD || "prod";
 const DEVSERVER = process.env.DEVSERVER || "http://localhost";
-const MONDODB_URL = process.env.MONDODB_URL || "mongodb://127.0.0.1:27017";
+const MONDODB_URL = process.env.MONDODB_URL || "mongodb://172.31.20.228:27017";
 
 const express = require('express');  // Import express.js
 const {MongoClient} = require('mongodb');
